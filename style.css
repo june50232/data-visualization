@@ -1,4 +1,82 @@
 body {
+    position: relative;
     margin: 0;
     background-color: #F4A388;
+}
+
+.chart-lightBox-button {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -110px;
+    background-color: yellow;
+    color: #272528;
+    width: 220px;
+    font-size: large;
+    font-family: fantasy;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 41px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 10px solid #717071;
+}
+
+.chart-lightBox-button:hover {
+    background-color: #FF642F;
+    color: white;
+}
+
+.close-button {
+    display: none;
+    position: absolute;
+    z-index: 4;
+    height: 45px;
+    width: 45px;
+    right: 0;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+.close-button:before {
+    content: 'X';
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 9px;
+    font-family: sans-serif;
+}
+
+.chart-light-box {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    background-color: white;
+    border: 16px solid grey;
+    border-radius: 6px;
+}
+
+.chart-light-box-shadow {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(232, 117, 90, 0.7);
+}
+
+.chart-light-box.active,
+.chart-light-box-shadow.active,
+.active>.close-button {
+    display: block;
 }
