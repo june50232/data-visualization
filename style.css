@@ -80,3 +80,8 @@ body {
 .active>.close-button {
     display: block;
 }
+
+.chart-light-box-iframe {
+    width: 100%;
+    height: 100%;
+}
